@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawsome.com/3bfd3ce9e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="grid">
+        <div class="turn">
+          <a href="#"><i class="fa-solid fa-xmark turquoise"></i></a>
+          <p>player1, you're up</p>
+        </div>
+
+        <!-- dropdown menu -->
+
+        <div class="menu" data-id="menu">
+          <button class="menu-btn">
+            Actions
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+
+          <div class="items border hidden" data-id="menu-items">
+            <button data-id="reset-btn">Reset</button>
+            <button data-id="new-round-btn">New Round</button>
+          </div>
+        </div>
+
+        <!-- Game board -->
+        <div id="1" class="square shadow" data-id="square"></div>
+
+        <div id="2" class="square shadow" data-id="square"></div>
+
+        <div id="3" class="square shadow" data-id="square"></div>
+
+        <div id="4" class="square shadow" data-id="square"></div>
+
+        <div id="5" class="square shadow" data-id="square"></div>
+
+        <div id="6" class="square shadow" data-id="square"></div>
+
+        <div id="7" class="square shadow" data-id="square"></div>
+
+        <div id="8" class="square shadow" data-id="square"></div>
+
+        <div id="9" class="square shadow" data-id="square"></div>
+
+        <!-- scoreboard -->
+
+        <div class="score shadow" style="background-color: var(--turquoise)">
+          <p>player 1</p>
+          <span data-="player1-stats">0 wins</span>
+        </div>
+
+        <div class="score shadow" style="background-color: var(--light-gray)">
+          <p>ties</p>
+          <span data-="ties">0</span>
+        </div>
+
+        <div class="score shadow" style="background-color: var(--yellow)">
+          <p>player 2</p>
+          <span data-="player2-stats">0 wins</span>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        original project by
+        <a href="Boniface">@nkasi.com</a>and
+        <a href="Hillary">@Hillary.com</a>
+      </p>
+
+      <p>
+        refactored by
+        <a href="Boniface Hillary" style="color: var(--turquoise)"
+          >@BonifaceHillary.dev</a
+        >
+      </p>
+    </footer>
+
+    <!-- modal that opens when game ends -->
+    <div class="modal hidden">
+      <div class="modal-contents">
+        <p>player 1 wins!</p>
+        <button>play again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
