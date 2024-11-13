@@ -77,11 +77,15 @@ const App = {
         console.log(`square with id ${event.target.id} was clicked`);
 
         console.log(`current player is ${App.state.currentPlayer}`);
-      
 
-        // if (square.hasChildNodes()) {
-        //   return;
-        // }
+        // console.log('square:', square)
+        // console.log('Event target: ', event.target)
+
+        
+
+        if (event.target.hasChildNodes()) {
+          return;
+        }
 
         //check if there is already a play, if so return early
 
@@ -120,7 +124,7 @@ const App = {
           playerId: currentPlayer,
         });
 
-        square.replaceChildren(icon);
+        event.target.replaceChildren(icon);
 
         // check if there is a winner or tie game
 
