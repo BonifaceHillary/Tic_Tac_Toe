@@ -50,7 +50,7 @@ const App = {
       winner, // 1 | 2 | null
     };
   },
-
+ 
   init() {
     App.registerEventListeners();
   },
@@ -79,6 +79,7 @@ const App = {
         console.log(`current player is ${App.state.currentPlayer}`);
 
         // console.log('square:', square)
+
         // console.log('Event target: ', event.target)
 
         
