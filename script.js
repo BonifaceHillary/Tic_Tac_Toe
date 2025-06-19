@@ -78,12 +78,9 @@ const App = {
 
         console.log(`current player is ${App.state.currentPlayer}`);
 
-        // console.log('square:', square)
-
-        // console.log('Event target: ', event.target)
-
         
 
+        
         if (event.target.hasChildNodes()) {
           return;
         }
@@ -118,8 +115,7 @@ const App = {
           icon.classList.add("fa-solid", "fa-o", "turquoise");
         }
 
-        // App.state.currentPlayer = App.state.currentPlayer === 1 ? 2 : 1;
-
+      
         App.state.moves.push({
           squareId: +square.id,
           playerId: currentPlayer,
