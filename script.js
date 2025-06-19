@@ -1,5 +1,5 @@
 const App = {
-  // All of  our selected html elements
+
   $: {
     menu: document.querySelector('[data-id="menu"]'),
     menuItems: document.querySelector('[data-id="menu-items"]'),
