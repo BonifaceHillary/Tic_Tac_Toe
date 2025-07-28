@@ -81,11 +81,7 @@ const App = {
 
         console.log(`current player is ${App.state.currentPlayer}`);
 
-// <<<<<<< HEAD
-//         // console.log('square:', square)
 
-
-// =======46dab1561f66e2555b57f26a248e01138ab0b865
         
 
         
