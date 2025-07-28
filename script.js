@@ -56,17 +56,20 @@ const App = {
   },
 
   registerEventListeners() {
+
     //DONE
     App.$.menu.addEventListener("click", (event) => {
       App.$.menuItems.classList.toggle("hidden");
     });
 
     //TODO
+
     App.$.resetBtn.addEventListener("click", (event) => {
       console.log("Reset the game");
     });
 
     //TODO
+
     App.$.newRoundBtn.addEventListener("click", (event) => {
       console.log("Add a new round");
     });
@@ -78,6 +81,11 @@ const App = {
 
         console.log(`current player is ${App.state.currentPlayer}`);
 
+// <<<<<<< HEAD
+//         // console.log('square:', square)
+
+
+// =======46dab1561f66e2555b57f26a248e01138ab0b865
         
 
         
