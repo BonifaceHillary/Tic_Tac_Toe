@@ -1,5 +1,5 @@
 const App = {
-  // All of  our selected html elements
+
   $: {
     menu: document.querySelector('[data-id="menu"]'),
     menuItems: document.querySelector('[data-id="menu-items"]'),
@@ -81,11 +81,14 @@ const App = {
 
         console.log(`current player is ${App.state.currentPlayer}`);
 
-        // console.log('square:', square)
+// <<<<<<< HEAD
+//         // console.log('square:', square)
 
 
+// =======46dab1561f66e2555b57f26a248e01138ab0b865
         
 
+        
         if (event.target.hasChildNodes()) {
           return;
         }
@@ -120,8 +123,7 @@ const App = {
           icon.classList.add("fa-solid", "fa-o", "turquoise");
         }
 
-        // App.state.currentPlayer = App.state.currentPlayer === 1 ? 2 : 1;
-
+      
         App.state.moves.push({
           squareId: +square.id,
           playerId: currentPlayer,
