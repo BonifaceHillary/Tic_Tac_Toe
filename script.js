@@ -89,7 +89,6 @@ const App = {
           return;
         }
 
-        //check if there is already a play, if so return early
 
         const hasMove = (squareId) => {
           const existingMove = App.state.moves.find(
