@@ -56,17 +56,20 @@ const App = {
   },
 
   registerEventListeners() {
+
     //DONE
     App.$.menu.addEventListener("click", (event) => {
       App.$.menuItems.classList.toggle("hidden");
     });
 
     //TODO
+
     App.$.resetBtn.addEventListener("click", (event) => {
       console.log("Reset the game");
     });
 
     //TODO
+
     App.$.newRoundBtn.addEventListener("click", (event) => {
       console.log("Add a new round");
     });
@@ -80,7 +83,6 @@ const App = {
 
         // console.log('square:', square)
 
-        // console.log('Event target: ', event.target)
 
         
 
